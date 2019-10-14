@@ -4,7 +4,7 @@ const violeta = document.getElementById('violeta');
 const naranja = document.getElementById('naranja');
 const verde = document.getElementById('verde');
 const btnEmpezar= document.getElementById('btnEmpezar');
-const ULTIMO_NIVEL= 2
+const ULTIMO_NIVEL= 10
 
 
 
@@ -18,8 +18,10 @@ class Juego{
     }
 
     inicializar(){
-        this.inicializar= this.inicializar.bind(this)
+        this.elegirColor = this.elegirColor.bind(this)
         this.siguienteNivel= this.siguienteNivel.bind(this)
+        this.inicializar= this.inicializar.bind(this)
+        
         this.toggleBtnEmpezar()
         
         this.nivel = 1;
@@ -92,18 +94,18 @@ class Juego{
         }
 
     agregarEventosClick(){
-        this.colores.celeste.addEventListener('click', this.elegirColor.bind(this))
-        this.colores.violeta.addEventListener('click',this.elegirColor.bind(this))
-        this.colores.naranja.addEventListener('click',this.elegirColor.bind(this))
-        this.colores.verde.addEventListener('click',this.elegirColor.bind(this))
+        this.colores.celeste.addEventListener('click', this.elegirColor)
+        this.colores.violeta.addEventListener('click',this.elegirColor)
+        this.colores.naranja.addEventListener('click',this.elegirColor)
+        this.colores.verde.addEventListener('click',this.elegirColor)
 
     }
 
     eliminarEventosClick(){
-        this.colores.celeste.removeEventListener('click', this.elegirColor.bind(this))
-        this.colores.violeta.removeEventListener('click',this.elegirColor.bind(this))
-        this.colores.naranja.removeEventListener('click',this.elegirColor.bind(this))
-        this.colores.verde.removeEventListener('click',this.elegirColor.bind(this))
+        this.colores.celeste.removeEventListener('click', this.elegirColor)
+        this.colores.violeta.removeEventListener('click',this.elegirColor)
+        this.colores.naranja.removeEventListener('click',this.elegirColor)
+        this.colores.verde.removeEventListener('click',this.elegirColor)
     }
     elegirColor(ev){
         const nombreColor = ev.target.dataset.color;

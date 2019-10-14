@@ -6,6 +6,8 @@ const verde = document.getElementById('verde');
 const btnEmpezar= document.getElementById('btnEmpezar');
 const ULTIMO_NIVEL=10
 
+swal('Hola')
+
 class Juego{
     constructor(){
         this.inicializar()

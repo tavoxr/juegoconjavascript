@@ -74,7 +74,7 @@ body {
     color: #2c3e50;
     font-size: 2rem;
     position: absolute;
-    top: calc(50% - 35px);
+    top: calc(50% - 20px);
     left: calc(50% - 150px);
     border-radius: 5px;
   }

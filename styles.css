@@ -3,10 +3,12 @@
 }
 body {
     margin: 0;
-    background: #dedede;
+    background: #daf0f3;
     display: flex;
+    
     align-items: center;
     height: 100vh;
+    overflow: hidden;
   }
 
   .gameboard {
@@ -34,7 +36,7 @@ body {
   }
 
   .celeste {
-    background: #22a6b3;
+    background: #25b0d3;
   }
 
   .celeste.light {
@@ -42,7 +44,7 @@ body {
   }
 
   .violeta {
-    background: #be2edd;
+    background: #a83fc0;
   }
 
   .violeta.light {
@@ -50,7 +52,7 @@ body {
   }
 
   .naranja {
-    background: #f0932b;
+    background: #e4861c;
   }
 
   .naranja.light {
@@ -58,7 +60,7 @@ body {
   }
 
   .verde {
-    background: #6ab04c;
+    background: #61be39;
   }
 
   .verde.light {
@@ -72,10 +74,12 @@ body {
     color: #2c3e50;
     font-size: 2.5rem;
     position: absolute;
-    top: calc(50% - 50px);
+    top: calc(50% - 40px);
     left: calc(50% - 200px);
+    border-radius: 5px;
   }
 
   .hide {
     display: none;
   }
+

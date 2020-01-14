@@ -68,14 +68,14 @@ body {
   }
 
   .btn-start {
-    width: 400px;
-    height: 100px;
+    width: 300px;
+    height: 80px;
     background: #ecf0f1;
     color: #2c3e50;
-    font-size: 2.5rem;
+    font-size: 2rem;
     position: absolute;
-    top: calc(50% - 40px);
-    left: calc(50% - 200px);
+    top: calc(50% - 35px);
+    left: calc(50% - 150px);
     border-radius: 5px;
   }
 
